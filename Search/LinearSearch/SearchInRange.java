@@ -1,0 +1,23 @@
+package Search;
+
+public class SearchInRange {
+    public static void main(String[] args){
+        int[] nums={23,43,4,-5,2};
+        int target=5;
+        int answer = rangeSearch(nums, target,1,3);
+        System.out.println("The Answer is:" + answer);
+    }
+
+        static int rangeSearch(int[] arr,int target,int start, int end){
+        if(arr.length==0){
+            return -1;
+        }
+
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==target){
+                return i;
+            }
+        }
+        return Integer.MAX_VALUE;
+    }
+}
