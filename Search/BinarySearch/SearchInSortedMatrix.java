@@ -32,10 +32,10 @@ public class SearchInSortedMatrix {
         int rows = matrix.length;
         int cols = matrix[0].length; // be cautious, matrix may be empty
         if (cols == 0){
-            return new int[] {-1,-1};
+            return new int[] {-1,-1};//matrix=[]
         }
         if (rows == 1) {
-            return binarySearch(matrix,0, 0, cols-1, target);
+            return binarySearch(matrix,0, 0, cols-1, target);// if only one row matrix comes 
         }
 
         int rStart = 0;
