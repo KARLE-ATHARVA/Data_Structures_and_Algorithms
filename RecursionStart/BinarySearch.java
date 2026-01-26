@@ -1,4 +1,4 @@
-package Recursion;
+package RecursionStart;
 
 public class BinarySearch {
     public static void main(String[] args){
